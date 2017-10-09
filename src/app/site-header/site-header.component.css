@@ -5,8 +5,13 @@ h1 {
 }
 
 table, th, td {
+   padding: 5px;
    
-    padding: 5px;
+    
+}
+
+table, tr{
+   height:40px; 	
 }
 
 body {
@@ -14,3 +19,7 @@ body {
     background: linear-gradient(180deg, #FFF 50%, #FF7676 50%);
 }
 
+form {
+     color: #FFF;
+     font-weight:bold;
+}
