@@ -14,6 +14,15 @@ export class SiteHeaderComponent implements OnInit {
 
 }
 
+export class AppComponent {
+  title = 'Kosciuszko Lodge No. 1085';
+}
+
+
+
+
+
+
 
 
 

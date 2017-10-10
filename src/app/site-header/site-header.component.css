@@ -19,7 +19,7 @@ body {
     background: linear-gradient(180deg, #FFF 50%, #FF7676 50%);
 }
 
-form {
+label {
      color: #FFF;
      font-weight:bold;
 }

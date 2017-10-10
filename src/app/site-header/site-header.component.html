@@ -25,11 +25,30 @@
       
     </td>
     <td>
-      <form style="text-align:right">
-         Select Language:&emsp;
-        <input type="radio" name="language" value="english" checked> English
-        <input type="radio" name="language" value="polska"> Polska
-      </form>
+
+	  <script>
+
+	    var app = angular.module("app", []);
+	    app.controller("RadioController", function ($scope) {
+
+		$scope.Lang = "English";
+
+		$scope.RadioChange = function (s) {
+		    $scope.LangSelected = s;
+		};
+	    });
+
+	  </script>
+
+	<div ng-app="app" ng-controller="RadioController" style="text-align:right">
+	    <label>Select Language</label>
+	    <label><input type="radio" name="SLang" ng-change="RadioChange('English')" ng-model="Lang" value="English"  /> English </label>
+	    <label><input type="radio" name="SLang" ng-change="RadioChange('Polska')" ng-model="Lang" value="Polska" /> Polska </label>
+
+
+	</div>
+
+
     </td>
    </tr>
   </table>
