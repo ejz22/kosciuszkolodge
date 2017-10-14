@@ -1,3 +1,22 @@
-<p>
-  nav-bar works!
-</p>
+
+<!-- Adding the ng-app declaration to initialize AngularJS -->
+<div id="main" ng-app>
+    <!-- The navigation menu will get the value of the "active" variable as a class.
+         The $event.preventDefault() stops the page from jumping when a link is clicked. -->
+
+    <nav class="{{active}}" ng-click="$event.preventDefault()">
+
+        <!-- When a link in the menu is clicked, we set the active variable -->
+
+        <a href="#" class="home" ng-click="active='home'">Home</a><br>
+        <a href="#" class="projects" ng-click="active='projects'">Projects</a><br>
+        <a href="#" class="services" ng-click="active='services'">Services</a><br>
+        <a href="#" class="contact" ng-click="active='contact'">Contact</a><br>
+    </nav>
+
+
+</div>
+
+
+
+
